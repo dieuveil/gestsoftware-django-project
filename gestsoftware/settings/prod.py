@@ -11,7 +11,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'gestsoftware-cg-herokuapp.com',
+    'gestsoftware-app.herokuapp.com',
 ]
 
 DEBUG_PROPAGATE_EXCEPTIONS = True
