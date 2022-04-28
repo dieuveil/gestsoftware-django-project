@@ -54,10 +54,10 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="" class="nav-link">Acceuil</a></li>
           <li class="nav-item"><a href="/about" class="nav-link">À Propos</a></li>
-          <li class="nav-item"><a href="#ourservice" class="nav-link">Nos Services</a></li>
-          <li class="nav-item"><a href="#ourteam" class="nav-link">Notre Equipe</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Nos Formations</a></li>
-          <li class="nav-item"><a href="event.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#ourservice" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#ourteam" class="nav-link">Equipe</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Formations</a></li>
+          <li class="nav-item"><a href="event.html" class="nav-link">Partenaires</a></li>
           <li class="nav-item"><a href="#ourcontact" class="nav-link">Contact</a></li>
           <li class="nav-item cta"><a href="contact.html" class="nav-link"><span>Applquer !</span></a></li>
         </ul>
@@ -334,9 +334,8 @@
     </div>
   </section>
 
-
   
-  <section class="ftco-section">
+  <section class="ftco-section" style="margin-top: -100px;">
     <div class="container">
       <div class="row justify-content-center mb-5 pb-3">
         <div class="col-md-7 heading-section text-center">
@@ -395,15 +394,15 @@
 
   <section class="ftco-section bg-light">
 
-    <div class="section-title" id="ourteam" data-aos="fade-up">
+    <!-- <div class="section-title" id="ourteam" data-aos="fade-up">
       <h2>Notre Equipe</h2>
       <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
-    </div>
+    </div> -->
 
     <div class="container">
-      <div class="row justify-content-center mb-5 pb-3">
-        <div class="col-md-7 heading-section ftco-animate text-center">
-          <h2 class="mb-4">Our Experience Advisor</h2>
+      <div id="ourteam" class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section text-center">
+          <h2 class="mb-4">Notre Equipe</h2>
         </div>
       </div>
       <div class="row">
@@ -609,7 +608,7 @@
 
         <div class="col-lg-4">
 
-          <div class="info">
+          <div class="info" style="padding: 40px;   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); overflow: hidden;">
             <h3>Get in touch</h3>
             <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
 
@@ -654,15 +653,15 @@
             <div class="form-group mt-3">
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
             </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+            <div class="form-group mt-6" style="height: 340px;">
+              <textarea  class="form-control" name="message" placeholder="Message" required></textarea>
             </div>
-            <div class="my-3">
+            <!-- <div class="my-3">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            </div> -->
+            <div class="text-center"><button style="background: #0ea2bd; color: #ffffff;  padding: 13px 50px; border: 0; border-radius: 0;" type="submit">Send Message</button></div>
           </form>
         </div><!-- End Contact Form -->
 
@@ -676,13 +675,13 @@
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer" style="font-size: 14px; color: #ffffff;">
 
-  <div class="inside" style="background-color: #485664;">
+  <div class="inside" style="background-color: #485664;  padding: 60px 0 30px 0;">
     <div class="container">
       <div class="row">
 
         <div class="col-lg-3 col-md-6">
           <div class="footer-info">
-            <h3>HeroBiz</h3>
+            <h3 style="color: #ffffff; margin: 0 0 20px 0; padding: 2px 0 2px 0; font-weight: 700;">GestSoftware</h3>
             <p>
               A108 Adam Street <br>
               NY 535022, USA<br><br>
@@ -693,7 +692,7 @@
         </div>
 
         <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4 style="color: #ffffff;">Useful Links</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
@@ -704,7 +703,7 @@
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Services</h4>
+          <h4 style="color: #ffffff;">Our Services</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
@@ -715,7 +714,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Our Newsletter</h4>
+          <h4 style="color: #ffffff;">Our Newsletter</h4>
           <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
           <form action="" method="post">
             <input type="email" name="email"><input type="submit" value="Subscribe">
