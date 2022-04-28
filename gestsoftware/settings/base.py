@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'acceuil.apps.AcceuilConfig',
     'django_extensions',
+    'django_bootstrap_icons',
 ]
 
 MIDDLEWARE = [

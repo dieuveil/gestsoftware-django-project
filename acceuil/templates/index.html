@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/icomoon.css"> -->
 
   <!-- Template Main CSS File -->
+  {% load bootstrap_icons %}
   {% load static %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" type='text/css' href="{% static 'styles/mainstyle.css' %}">
@@ -51,13 +52,13 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Acceuil</a></li>
+          <li class="nav-item active"><a href="" class="nav-link">Acceuil</a></li>
           <li class="nav-item"><a href="/about" class="nav-link">À Propos</a></li>
-          <li class="nav-item"><a href="course.html" class="nav-link">Nos Services</a></li>
-          <li class="nav-item"><a href="teacher.html" class="nav-link">Notre Equipe</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Nos cours</a></li>
+          <li class="nav-item"><a href="#ourservice" class="nav-link">Nos Services</a></li>
+          <li class="nav-item"><a href="#ourteam" class="nav-link">Notre Equipe</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Nos Formations</a></li>
           <li class="nav-item"><a href="event.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#ourcontact" class="nav-link">Contact</a></li>
           <li class="nav-item cta"><a href="contact.html" class="nav-link"><span>Applquer !</span></a></li>
         </ul>
       </div>
@@ -83,14 +84,14 @@
       <div class="row no-gutters slider-text align-items-center justify-content-center">
         <div class="col-md-12 text-center">
           <h1 class="mb-4" id="mytest">Aucune Nation Ne Peut Prosperer Sans L'Education</h1>
-          <p><a href="#" class="btn btn-primary">Nos Services</a> <a href="#" class="btn btn-secondary">Notre Vision</a>
+          <p><a href="#ourservice" class="btn btn-primary">Nos Services</a> <a href="#ourvision" class="btn btn-secondary">Notre Vision</a>
           </p>
         </div>
       </div>
     </div>
   </div>
 
-  <section class="ftco-search-course">
+  <section class="ftco-search-course" style="margin-top: -303px;">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -171,7 +172,7 @@
   <section id="more-services" class="more-services">
     <div class="container">
 
-      <div class="section-title" data-aos="fade-up">
+      <div class="section-title" id="ourservice" data-aos="fade-up">
         <h2>Services</h2>
         <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
       </div>
@@ -270,24 +271,24 @@
     <div class="container">
       <div class="row justify-content-center mb-5 pb-3">
         <div class="col-md-7 heading-section text-center">
-          <h2 class="mb-4">Notre vision</h2>
+          <h2 class="mb-4" id="ourvision">Notre vision</h2>
           <h4>Les objectifs majeurs que Gestsoftware veut atteindre figurent ci-dessus</h4>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 d-flex">
           <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/event-1.jpg');">
+            <a href="blog-single.html" class="block-20" style="background-image: url('{%static 'img/formation-center2.jpg'%}');">
             </a>
             <div class="text p-4 d-block">
-              <div class="meta mb-3">
-                <div><a href="#">Sep. 10, 2018</a></div>
-                <div><a href="#">Admin</a></div>
-                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-              </div>
-              <h3 class="heading mb-4"><a href="#">Intern Bootcamp Meetup 20183</a></h3>
-              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i
-                    class="icon-map-o"></i> Venue Main Campus</span></p>
+               <div class="meta mb-3">
+                <div><a href="#">Gestsoftware</a></div>
+                <!-- <div><a href="#">Admin</a></div>
+                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+              </div> 
+              <h3 class="heading mb-4"><a href="#">En tant que centre de Formation</a></h3>
+              <!-- <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i
+                    class="icon-map-o"></i> Venue Main Campus</span></p> -->
               <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
             </div>
@@ -295,38 +296,38 @@
         </div>
         <div class="col-md-4 d-flex">
           <div class="blog-entry d-flex align-self-stretch flex-column-reverse">
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/event-2.jpg');">
+            <a href="blog-single.html" class="block-20" style="background-image: url('{%static 'img/formation-center.jpg'%}');">
             </a>
             <div class="text p-4 d-block">
               <div class="meta mb-3">
-                <div><a href="#">Sep. 10, 2018</a></div>
-                <div><a href="#">Admin</a></div>
-                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-              </div>
-              <h3 class="heading mb-4"><a href="#">Intern Bootcamp Meetup 2018</a></h3>
-              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i
-                    class="icon-map-o"></i> Venue Main Campus</span></p>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
-            </div>
+               <div><a href="#">Gestsoftware</a></div>
+               <!-- <div><a href="#">Admin</a></div>
+               <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+             </div> 
+             <h3 class="heading mb-4"><a href="#">En tant que Incubateur</a></h3>
+             <!-- <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i
+                   class="icon-map-o"></i> Venue Main Campus</span></p> -->
+             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+             <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+           </div>
           </div>
         </div>
         <div class="col-md-4 d-flex">
           <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/event-3.jpg');">
+            <a href="blog-single.html" class="block-20" style="background-image: url('{%static 'img/startup.jpg'%}');">
             </a>
             <div class="text p-4 d-block">
               <div class="meta mb-3">
-                <div><a href="#">Sep. 10, 2018</a></div>
-                <div><a href="#">Admin</a></div>
-                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-              </div>
-              <h3 class="heading mb-4"><a href="#">Intern Bootcamp Meetup 2018</a></h3>
-              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i
-                    class="icon-map-o"></i> Venue Main Campus</span></p>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
-            </div>
+               <div><a href="#">Gestsoftware</a></div>
+               <!-- <div><a href="#">Admin</a></div>
+               <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+             </div> 
+             <h3 class="heading mb-4"><a href="#">En tant que Start-up informatique</a></h3>
+             <!-- <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i
+                   class="icon-map-o"></i> Venue Main Campus</span></p> -->
+             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+             <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+           </div>
           </div>
         </div>
       </div>
@@ -393,6 +394,12 @@
 
 
   <section class="ftco-section bg-light">
+
+    <div class="section-title" id="ourteam" data-aos="fade-up">
+      <h2>Notre Equipe</h2>
+      <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
+    </div>
+
     <div class="container">
       <div class="row justify-content-center mb-5 pb-3">
         <div class="col-md-7 heading-section ftco-animate text-center">
@@ -580,9 +587,15 @@
    <!-- ======= Contact Section ======= -->
    <section id="contact" class="contact">
     <div class="container">
-      <div class="section-header">
+      <!-- <div class="section-header">
         <h2>Contact Us</h2>
         <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
+      </div> -->
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section text-center">
+          <h2 class="mb-4" id="ourcontact">Contact Us</h2>
+          <p>Les objectifs majeurs que Gestsoftware veut atteindre figurent ci-dessus</p>
+        </div>
       </div>
     </div>
 
@@ -661,7 +674,7 @@
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
-<footer id="footer" class="footer">
+<footer id="footer" class="footer" style="font-size: 14px; color: #ffffff;">
 
   <div class="inside" style="background-color: #485664;">
     <div class="container">
@@ -715,23 +728,23 @@
   </div>
 
   <div class="footer-legal text-center" style="background-color: #3A4753;">
-    <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+    <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center" style="padding-top: 15px; padding-bottom: 15px;">
 
       <div class="d-flex flex-column align-items-center align-items-lg-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>HeroBiz</span></strong>. All Rights Reserved
+        <div class="copyright" style="color: #ffffff;">
+          &copy; Copyright <strong><span>GestSoftware</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
         </div>
       </div>
 
       <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
@@ -741,7 +754,7 @@
     </div>
   </div>
 
-</footer>
+</footer> 
 <!-- End Footer 
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 <div id="preloader"></div>-->
