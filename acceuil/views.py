@@ -19,3 +19,11 @@ def index(request):
 # create a function
 def about(request):
     return render(request, "about.html")
+
+# create a function
+def formation(request):
+    return render(request, "formation.html")
+
+# create a function
+def webdeveloper(request):
+    return render(request, "webdeveloper.html")
