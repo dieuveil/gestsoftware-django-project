@@ -20,9 +20,18 @@ def index(request):
 def about(request):
     return render(request, "about.html")
 
+
 # create a function
 def formation(request):
     return render(request, "formation.html")
+
+# create a function
+def startup(request):
+    return render(request, "startup.html")
+
+# create a function
+def incubateur(request):
+    return render(request, "incubateur.html")
 
 # create a function
 def webdeveloper(request):

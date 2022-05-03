@@ -8366,3 +8366,15 @@ a[data-toggle="collapse"] {
     background-color: #f1f1f1;
     color: black;
   }
+
+
+
+
+.nav-link[data-toggle].collapsed:after {
+  content: " ▾";
+  color: #000;
+}
+.nav-link[data-toggle]:not(.collapsed):after {
+  content: " ▴";
+  color: #000;
+}
