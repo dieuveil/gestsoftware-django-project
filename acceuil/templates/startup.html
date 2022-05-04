@@ -62,27 +62,40 @@
   </head>
   <body>
     
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><i class="flaticon-university"></i>Genius <br><small>University</small></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item active"><a href="course.html" class="nav-link">Courses</a></li>
-          <li class="nav-item"><a href="teacher.html" class="nav-link">Teacher</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          <li class="nav-item cta"><a href="contact.html" class="nav-link"><span>Apply Now!</span></a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="height: 60px;">
+      <div class="container">
+        <a style="margin-top: -12px;" class="navbar-brand" href="index.html"><i class="flaticon-university"></i>Genius
+          <br><small>University</small></a>
+        <button style="margin-top: -20px;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+          aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+  
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="/" class="nav-link">Acceuil</a></li>
+            <li class="nav-item"><a href="/about" class="nav-link">À Propos</a></li>
+            <!-- <li class="nav-item"><a href="#ourservice" class="nav-link">Services</a></li> -->
+            <li style="margin-top: 15px;" class="dropdown">
+              <a class="dropdown-toggle" style="font-size: 16px; color: #55688b; font-weight: 400; opacity: 1 !important; padding-left: 20px; padding-right: 20px; padding-bottom: 0.9rem; padding-top: 12rem;" data-toggle="dropdown" href="#">Services
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu" style="margin-top: -15px; padding-left: 20px;">
+                <li><a href="/formation">Formations</a></li>
+                <li class="active"><a href="/incubateur">Incubateur</a></li>
+                <li><a href="/startup">Start-up</a></li>
+              </ul>
+            </li>
+  
+  
+            <!-- <li class="nav-item"><a href="#ourteam" class="nav-link">Equipe</a></li> -->
+            <li class="nav-item"><a href="/formation" class="nav-link">Formations</a></li>
+            <!-- <li class="nav-item"><a href="event.html" class="nav-link">Partenaires</a></li> -->
+            <!-- <li class="nav-item"><a href="#ourcontact" class="nav-link">Contact</a></li> -->
+            <li class="nav-item cta"><a id="register" style="height: 38px; text-align: center; margin-top: 10px; padding-top: 5px;" class="nav-link"><span>Applquer !</span></a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
     <!-- END nav -->
     
     <div class="hero-wrap hero-wrap-2" style="background-image: url('{%static 'img/web-mobile.jpg'%}'); background-attachment:fixed; height: 390px;">
@@ -90,7 +103,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-8  text-center">
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Acceuil</a></span> <span>Formation</span></p>
+            <p class="breadcrumbs" style="font-size: 20px;"><span class="mr-2"><a href="/">Acceuil</a></span> <span>Start-up</span></p>
             <h1 class="mb-3 bread">Start-up</h1>
           </div>
         </div>
@@ -108,14 +121,10 @@
             </div>
 
             <div class="col-md-6 pl-md-5 ">
-    				<h2 class="mb-4">GestSoftware</h2>
-    				<p>GestSoftware est une Entreprise informatique cree en 2013 par l'informaticien et entrepreneur --- </p>
-    				<p>Les principaux services de l'Entreprise GestSoftware sont: 
-              <ul>
-                <li>La formation,</li> 
-                <li>Le developpement des Applications Web et Mobile,</li> 
-                <li>GestSoftware dispose egalemant d'un incubateur.</li> 
-              </ul><br/>
+    				<h2 class="mb-4" style="text-align: center;">Le Service de developpement des Applications Web et Mobile de GestSoftware </h2>
+    				<p style="text-align: justify;">Vous voulez digitaliser votre Entreprise ? Eh bien vous etes au bon endrois car Gestsoftware dispose d'un service de developpement des Applicatiions Web ou Mobile
+            En dehors de nos propres projets interne, nous avons une equipe capable de developper des Applications Web et Mobile selon vos choix
+            Nous pouvons egalement developper des Bases de données comme des Data Wwarehouse qui vous permettrons de mieux gerer vos données. <strong>Vous pouvez nous contacter pour plus d'information</strong>
             </p>
     			</div>
     		</div>
