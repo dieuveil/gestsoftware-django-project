@@ -91,26 +91,43 @@
             <li class="nav-item active"><a href="/formation" class="nav-link">Formations</a></li>
             <!-- <li class="nav-item"><a href="event.html" class="nav-link">Partenaires</a></li> -->
             <!-- <li class="nav-item"><a href="#ourcontact" class="nav-link">Contact</a></li> -->
-            <li class="nav-item cta"><a id="register" style="height: 38px; text-align: center; margin-top: 10px; padding-top: 5px;" class="nav-link"><span>Applquer !</span></a></li>
+            <!-- <li class="nav-item cta"><a id="register" style="height: 38px; text-align: center; margin-top: 10px; padding-top: 5px;" class="nav-link"><span>Applquer !</span></a></li> -->
+            <li class="nav-item cta"><button type="button" class="btn btn-primary" style="margin-top: 10px;">Appliquez !</button></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap hero-wrap-2" style="background-image: url('{%static 'img/bkg3.jpg'%}'); background-attachment:fixed; height: 390px;">
+    <div class="hero-wrap hero-wrap-2" style="background-image: url('{%static 'img/formation-center2.jpg'%}'); background-attachment:fixed; height: 390px;">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-8  text-center">
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Acceuil</a></span> <span>Formation</span></p>
+            <p class="breadcrumbs" style="font-size: 20px;"><span class="mr-2"><a href="/">Acceuil</a></span> <span>Formation</span></p>
             <h1 class="mb-3 bread">Formations</h1>
           </div>
         </div>
       </div>
     </div>
 
+
+    <div id="content">
+      <div style="border: 1px solid black; padding-top: 40px; padding-left: 110px; padding-right: 110px;">
+        <h3><strong>Introduction</strong></h3>
+        <p style="text-align: justify;">
+          Cette page contient toutes les formations que <strong>GestSoftware</strong> met a votre disposition.
+          Pour avoir plus d'informations concernant une formation donnée, veuillez clicker sur le boutton <strong>Plus d'infos</strong>
+          afin de voir toutes les informations dont vous avez besoins. Tel que "l'interet de faire cette formation" qui est une information capitale pour vous.
+          Sachez que <strong>GestSoftware</strong> propose des formations certifiantes et diplomantes. Vous devriez egalement considerer la date du debut et de la fin de chaque formation.<br/>
+
+          
+
+        </p>
+    </div>
+
     <section class="ftco-section">
+
     	<div class="container">
     		<div class="row">
     			<div class="col-md-4 d-flex">
@@ -119,10 +136,9 @@
               <div class="text p-4">
                 <p class="category"><span>L'intelligence Artificielle</span></p>
                 <h3 class="mb-3"><a href="#">Devenez Data scientist</a></h3>
-                <p>A travers cette formation pratique vous allez comprendre la difference entre l'intelligence Artificielle, la machine learning et le deep learning. Vous serez capable d'expliquez le fonctionement des algorithmes  du machine learning
-                 A la fin vous sauriez comment implementer les modeles machine learning.
+                <p style="text-align: justify;">A traver cette formation vous allez apprendre a implementer les models machine learning et deep learning.
                 </p>
-                <p><a href="#" class="btn btn-primary">Plus D'infos!</a></p>
+                <p><a href="#" class="btn btn-primary">Plus d'infos !</a></p>
               </div>
             </div>
           </div>
@@ -131,10 +147,9 @@
               <a href="#" class="img" style="background-image: url('{%static 'img/web.jpg'%}')"></a>
               <div class="text p-4">
                 <p class="category"><span>Web</span></p>
-                <h3 class="mb-3"><a href="#">Devenez developer Web</a></h3>
-                <p>Le Web development est l'un des metiers les plus chaud en Informatique et grace a cette formation
-                  vous pouvez devenir un developer Web agueri. A la fin de cette formation vous serez capable de faire du back et frent-end. </p>
-                <p><a href="#" class="btn btn-primary">Enroll now!</a></p>
+                <h3 class="mb-3"><a href="#">Devenez développeur Web</a></h3>
+                <p style="text-align: justify;">Cette formation vous permettra d'acquerir une maitrise parfaite du HTML5, de CSS3, de Javascripts et de PHP. </p>
+                <p><a href="/web-developer" class="btn btn-primary">Plus d'infos !</a></p>
               </div>
             </div>
           </div>
@@ -143,11 +158,10 @@
               <a href="#" class="img" style="background-image: url('{%static 'img/cyber.jpg'%}')"></a>
               <div class="text p-4">
                 <p class="category"><span>Cybersecurité "Pentest"</span></p>
-                <h3 class="mb-3"><a href="#">Comment devenir expert en Cybersecurité ?</a></h3>
-                <p>Plus de 6.9 milliards de dollards sont perdu par annees a cause de la cybercriminalité. A traver ce chiffre nous pouvons imaginer a quel point ce metier est indisponsable.
-                  Notre formation vous permet de devenir un expert en Pentest afin de pouvoir tester les vulnerabilités du sytemes informatique des entreprises afin de les proposer des solutions de defense.
+                <h3 class="mb-3"><a href="#">Devenez expert en Cybersecurité</a></h3>
+                <p style="text-align: justify;">Cette formation vous permettra d'apprendre a explorer les vulnerabilités du systeme informatique d'une entreprise données.
                 </p>
-                <p><a href="#" class="btn btn-primary">Enroll now!</a></p>
+                <p><a href="#" class="btn btn-primary">Plus d'infos!</a></p>
               </div>
             </div>
           </div>
@@ -156,11 +170,10 @@
               <a href="#" class="img" style="background-image: url('{%static 'img/android.jpg'%}')"></a>
               <div class="text p-4">
                 <p class="category"><span>Android</span></p>
-                <h3 class="mb-3"><a href="#">Devenir developer Android</a></h3>
-                <p>Android est le systeme d'exploitation le plus populaire du monde avec plus de 2.5 milliards d'utilisateurs.
-                  Et la demlande de personnes ayant ces competences ne fait que s'accroitre. Et Gestsoftware vous propose une formation qui vous permettra de devenir un developeur digne de ce nom.
+                <h3 class="mb-3"><a href="#">Développeur d'application Android</a></h3>
+                <p style="text-align: justify;">Cette formation est parfaite pour vous si vous voullez apprendre a implementer des Applications Android.
                 </p>
-                <p><a href="#" class="btn btn-primary">Enroll now!</a></p>
+                <p><a href="/mobile-developer" class="btn btn-primary">Plus d'infos!</a></p>
               </div>
             </div>
           </div>
@@ -170,10 +183,9 @@
               <div class="text p-4">
                 <p class="category"><span>Big Data</span></p>
                 <h3 class="mb-3"><a href="#">Devenez expert en Big data</a></h3>
-                <p>Beaucoup d'entreprise generent une quantité enorme de données et ont besoins d'ingenieurs pour bien gerer ces données afin d'en tirer profit.
-                  Notre formation tres pratique vous permet de devenir un de ces ingenieurs.
+                <p style="text-align: justify;">Durant cette formation vous allez apprendre a utilisé les data lake tel que Hadoop ainsi que les datawarehouse comme Microsoft SQL.
                 </p>
-                <p><a href="#" class="btn btn-primary">Enroll now!</a></p>
+                <p><a href="#" class="btn btn-primary">Plus d'infos!</a></p>
               </div>
             </div>
           </div>
@@ -183,10 +195,9 @@
               <div class="text p-4">
                 <p class="category"><span>Python 3.2</span></p>
                 <h3 class="mb-3"><a href="#">Apprenez a developper en python</a></h3>
-                <p>Python est l'un des languages de programmation les plus populaires et reste incontournable en Intelligence Artificielle
-                  avec python vous pouvez egalement developer des applications web avec django qui est un framework tres populaires.
+                <p style="text-align: justify;">Ce language de programmation vous permettra de devenir soit developpeur web avec django ou data scientist étant incontournable en IA.
                 </p>
-                <p><a href="#" class="btn btn-primary">Enroll now!</a></p>
+                <p><a href="#" class="btn btn-primary">Plus d'infos !</a></p>
               </div>
             </div>
           </div>

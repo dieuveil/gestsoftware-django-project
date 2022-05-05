@@ -36,3 +36,6 @@ def incubateur(request):
 # create a function
 def webdeveloper(request):
     return render(request, "webdeveloper.html")
+
+def mobiledeveloper(request):
+    return render(request, "mobiledeveloper.html")

@@ -7,6 +7,7 @@ from .views import formation
 from .views import incubateur
 from .views import startup
 from .views import webdeveloper
+from .views import mobiledeveloper
  
 urlpatterns = [
     path('', index),
@@ -15,4 +16,5 @@ urlpatterns = [
     path('startup', startup),
     path('incubateur', incubateur),
     path('web-developer', webdeveloper),
+    path('mobile-developer', mobiledeveloper),
 ]
