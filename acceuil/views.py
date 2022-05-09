@@ -39,3 +39,9 @@ def webdeveloper(request):
 
 def mobiledeveloper(request):
     return render(request, "mobiledeveloper.html")
+
+def bigdata(request):
+    return render(request, "bigdata.html")
+
+def datascience(request):
+    return render(request, "datascience.html")

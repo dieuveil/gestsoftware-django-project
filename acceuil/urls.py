@@ -1,7 +1,7 @@
 from django.urls import path
  
 # importing views from views..py
-from .views import incubateur, index
+from .views import bigdata, incubateur, index
 from .views import about
 from .views import formation
 from .views import incubateur
@@ -17,4 +17,5 @@ urlpatterns = [
     path('incubateur', incubateur),
     path('web-developer', webdeveloper),
     path('mobile-developer', mobiledeveloper),
+    path('bigdata', bigdata),
 ]
