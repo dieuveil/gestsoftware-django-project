@@ -50,51 +50,141 @@
   <link rel="stylesheet" href="{% static 'styles/open-iconic-bootstrap.min.css' %}">
 
   </head>
-  <body style="background-color: #F8F8F9;">
+  <body style="background-color: white;">
 
-    <div class="retour" style="padding-left: 170px;">  
-      <a href="#" class="previous" style="font-size: 25px;">&laquo; Previous</a>
+    <div class="retour" style="padding-left: 170px;"> 
+      <br/> 
+      <a href="/formation" class="previous" style="font-size: 25px; background-color: #ffffff; color: #3DDC84; font-weight: 400;">&laquo; Formations</a>
     </div>
     
-
       <div class="container d-md-flex align-items-stretch">
+
         <!-- Page Content  -->
         <div id="content" class="p-4 p-md-5 pt-5">
           <div class="mb-4">
-            <h3>Frequently Asked <strong>Questions</strong></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+
+            <div style="text-align: center;">
+              <img style="width: 500px; height: 400px;" src="{% static 'img/myweb.jpg' %}" alt="My image">
+            </div><br/><br/>
+
+            <h3><strong>Devenez Développeur Web, et forger votre avenir</strong></h3><br/>
+            <p style="text-align: justify; color: #000;">
+              Voici ce que tkt.paris raconte concernant les avantages du développement informatique : Toutes les personnes qui apprennent la programmation n’auront pas un jour de créer le nouveau Facebook. Toutefois, savoir coder vous donne la possibilité de faire naître un projet par vous-même. 
+              Si vous avez l’âme créative et que vous souhaitez innover en créant un site, une application ou bien encore un logiciel, vous aurez la capacité de le faire et d’apporter au monde votre contribution. Si vous souhaitez devenir patron de votre propre entreprise, connaître les bases fondamentales du développement web ne sera pas de trop.<br/>
+              Nous ne voullons pas seulement vous formez et vous abandonnez a votre propre sort mais notre but est que vous parvenez soit a trouver un boulot soit a entreprendre, voila pourquoi nous mettons a votre disposition un incubateur pour vous accompagnez et faire de vous un développeur Web agueri.
+            </p><br/><br/>
+          </div>
+          <div class="mb-4">
+            <h3><strong>Le type de Diplôme que vous obtiendrez</strong></h3><br/>
+            <p style="text-align: justify; color: #000;">
+              Cette formation vous permet d'obtenir un diplôme de type Bac + 4 en seulement six (6) mois plus les deux (2) mois et une semaine
+              pour les stages et la preparation pour la recherche d'emploi en ligne et local.
             </p>
-          </div>
+          </div><br/><br/>
+          <div class="mb-4">
+            <h3><strong>Pré-requis</strong></h3>
+            <p style="text-align: justify; color: #000;">
+              La seule et unique conditions avant de commencer cette formation est d'avoir un Baccalaureat et un quelque connaissance en Informatique. 
+            </p>
+          </div><br/><br/>
+          <div class="mb-4" style="text-align: center;">
+            <h3 style="color: #000;"><strong>Le contenu de ce que vous allez apprendre figure sur la liste si-dessus</strong></h3>
+          </div><br/><br/>
 
 
-          <div>
+        <div style="">
 
-          <!-- <h3 class="accordion-header" data-aos="fade-up" data-aos-delay="200" style="border-radius: 0; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #ffffff; color: #1a1f24;"> -->
-          <!-- <h3 class="accordion-header" data-aos="fade-up" data-aos-delay="200" style="border-radius: 0; padding: 15px 40px 20px 25px; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #ffffff; color: #1a1f24; width: 760px;">  -->
-          <h3 class="accordion-header" data-aos="fade-up" data-aos-delay="200" style="height: 65px; border-radius: 0; padding: 18px 40px 20px 25px; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #ffffff; color: #1a1f24;"> 
-            <!-- <button data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Non consectetur a erat nam at lectus urna duis?
-              <i style="font-size: 40px" class="fa fa-sort-desc" aria-hidden="true"></i> 
-            </button> -->
-            <div class="row">
-              <div class='col-4'>
-               <p data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">DAS IST MY TEXT</p>
-              </div>
-              <div class="col-6">
-
-              </div>
-              <div class='col-2' style="border: 1px solid #000; padding-left: 70px;">
-               <i style="font-size: 40px; margin-top: -10px;" class="fa fa-sort-desc" aria-hidden="true"></i>   
-              </div>
+          <!-- <h3 class="accordion-header"  style="border-radius: 0; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #ffffff; color: #1a1f24;"> -->
+          <!-- <h3 class="accordion-header"  style="border-radius: 0; padding: 15px 40px 20px 25px; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #ffffff; color: #1a1f24; width: 760px;">  -->
+          <h3 id="intro" class="accordion-header"  style="height: 65px; border-radius: 0; padding: 18px 40px 20px 25px; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #F8F8F9; color: #1a1f24;">  
+            <div class="author" style="padding: 18px 30px 35px 30px; margin-top: -20px;">
+              <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><p data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false">A/ Introduction  
+              </span>
+              <!-- <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><i style="font-size: 40px;" class="fa fa-angle-down" aria-hidden="true"></i>    -->
+              </span>
             </div>
-            <!-- <span> <i style="font-size: 40px" class="fa fa-sort-desc" aria-hidden="true"></i> </span> -->
           </h3>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          <div>
+            <div class="card card-body" style="text-align: justify; color: #000;">
+              Durant cette partie longue et theorique nous allons vous inculquez toutes les notions necessaires pour que vous vous lancer dans le métier du Web sans lacune.
+              Vous allez donc apprendre quelque notions de reseau que nous jugons necessaire tel que le modele OSI, le TCP/IP, le DNS, l'architecture client-serveur, HTTP/HTTPS, FTP, SSH, NTP, Telnet.
             </div>
-          </div>
+          </div><br/><br/>
+          <h3 id="comprendre" class="accordion-header"  style="height: 65px; border-radius: 0; padding: 18px 40px 20px 25px; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #F8F8F9; color: #1a1f24;">  
+            <div class="author" style="padding: 18px 30px 35px 30px; margin-top: -20px;">
+              <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><p data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"> B/ Les languages et formats du Web 
+              </span>
+            </div>
+          </h3>
+          <div>
+            <div class="card card-body" style="text-align: justify; color: #000;">
+              Ici vous allez apprendre la difference entre XML et JSON. En suite vous allez apprendre de facons pratique a utilisés tous les tags du HTML5 les plus utilisés. 
+            </div>
+          </div><br/><br/>
+          <h3 id="composants"  class="accordion-header"  style="height: 65px; border-radius: 0; padding: 18px 40px 20px 25px; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #F8F8F9; color: #1a1f24;">  
+            <div class="author" style="padding: 18px 30px 35px 30px; margin-top: -20px;">
+              <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><p data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"> C/ Styliser HTML5 avec CSS3
+              </span>
+            </div>
+          </h3>
+          <div >
+            <div class="card card-body" style="text-align: justify; color: #000;">
+              Durrant cette partie toujours pratique de la formation, vous allez apprendre a styliser les tags HTML5 que vous avez appris precedement, ensuite vous allez apprendre quelques notions sur bootstrap qui l'un des framework CSS les plus populaires.
+              A la fin de cette partie vous aurez deja realisé un site web static.
+            </div>
+          </div><br/><br/>
+          <h3 id="design"  class="accordion-header"  style="height: 65px; border-radius: 0; padding: 18px 40px 20px 25px; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #F8F8F9; color: #1a1f24;">  
+            <div class="author" style="padding: 18px 30px 35px 30px; margin-top: -20px;">
+              <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><p data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"> D/ Dynaminer HTML5 avec Javascript
+              </span>
+            </div>
+          </h3>
+          <div >
+            <div class="card card-body" style="text-align: justify; color: #000;">
+            Durant cette partie nous allons continuer a travailler sur le site que aurez réaliser et le but est de dynamiser les éléménts HTML et de ce site grace a Javascript et particulierement
+            a traver Jquery qui est un framework de Javascript.
+
+            </div>
+          </div><br/><br/>
+          <h3 id="stockage"  class="accordion-header"  style="height: 65px; border-radius: 0; padding: 18px 40px 20px 25px; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #F8F8F9; color: #1a1f24;">  
+            <div class="author" style="padding: 18px 30px 35px 30px; margin-top: -20px;">
+              <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><p data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"> E/ Choisir entre Python/Django, Java/Springboot, et PHP/Laravel 
+              </span>
+            </div>
+          </h3>
+          <div >
+            <div class="card card-body" style="text-align: justify; color: #000;">
+              Selon le choix que vous allez faire, vous étudierez d'abord le language de programmation choisis ensuite le framework qui correspond. Vous allez apprendre a realisé des Rest API et recuperé les données a partir ces API et les afficher dans vos view (vue).
+              Vous allez également apprendre a travaillé avec les bases de données tels que: Mysql, Mongodb.
+            </div>
+          </div><br/><br/>
+          
+         <!-- <h3 id="mydebug"  class="accordion-header"  style="height: 65px; border-radius: 0; padding: 18px 40px 20px 25px; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #F8F8F9; color: #1a1f24;">  
+            <div class="author" style="padding: 18px 30px 35px 30px; margin-top: -20px;">
+              <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><p data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"> H/ Debbuging
+              </span>
+            </div>
+          </h3>
+          <div >
+            <div class="card card-body" style="text-align: justify; color: #000;">
+              Durant cette partie du cours nous allons vous apprendre a gerer les erreurs et les bugs sur Android grace aux concepts tels que: Les Exceptions, les Logging et le memory profiling.
+            </div>
+          </div><br/><br/>
+          <h3 id="security"  class="accordion-header" style="height: 65px; border-radius: 0; padding: 18px 40px 20px 25px; font-weight: 600; border: 0; font-size: 18px; text-align: left; box-shadow: none; background-color: #F8F8F9; color: #1a1f24;">  
+            <div class="author" style="padding: 18px 30px 35px 30px; margin-top: -20px;">
+              <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><p data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"> I/ La sécurité avant le deployement
+              </span>
+            </div>
+          </h3>
+          <div>
+            <div class="card card-body" style="text-align: justify; color: #000;">
+              A la fin de la formation vous allez apprendre a deployé une Application securisé sur Playstore.
+            </div>
+          </div> -->
+
+
+
+
         </div>
        
         </div>
@@ -113,125 +203,55 @@
 
 
 
-        <nav id="sidebar">
+        <nav id="sidebar" style="display:inline-block;">
           <div class="p-4 pt-5">
-            <h5>Categories</h5>
-            <!-- <ul class="list-unstyled components mb-5">
-              <li>
-                <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Mens Shoes</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu1">
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Casual</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Football</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Jordan</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Lifestyle</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Running</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Soccer</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Sports</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Mens Shoes</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu2">
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Casual</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Football</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Jordan</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Lifestyle</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Running</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Soccer</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Sports</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accessories</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu3">
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Nicklace</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Ring</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Bag</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Sacks</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Lipstick</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Clothes</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu4">
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Jeans</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> T-shirt</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Jacket</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Shoes</a></li>
-                  <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Sweater</a></li>
-                </ul>
-              </li>
-            </ul> -->
+            <h5>Contenu</h5>
             <ul class="nav flex-column flex-nowrap overflow-hidden">
               <li class="nav-item">
-                  <a class="nav-link text-truncate" href="#"><i style="color: rgb(195, 44, 44); font-size: 20px;" class="fa fa-home"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">Overview <span style="margin-left: 65px; color: #000;">(1)</span> </span></a>
+                  <a class="nav-link text-truncate" href="#intro"><i style="color: #3DDC84; font-size: 20px;" class="fa fa-android"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">A/ Introduction</span></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-truncate" href="#"><i style="color: rgb(195, 44, 44); font-size: 20px;" class="fa fa-home"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">Overview <span style="margin-left: 65px; color: #000;">(1)</span> </span></a>
+                  <a class="nav-link text-truncate" href="#comprendre"><i style="color: #3DDC84; font-size: 20px;" class="fa fa-android"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">B/ Tout commence avec HTML5 </span></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-truncate" href="#"><i style="color: rgb(195, 44, 44); font-size: 20px;" class="fa fa-home"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">Overview <span style="margin-left: 65px; color: #000;">(1)</span> </span></a>
+                  <a class="nav-link text-truncate" href="#composants"><i style="color: #3DDC84; font-size: 20px;" class="fa fa-android"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">C/ Styliser avec CSS3 </span></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-truncate" href="#"><i style="color: rgb(195, 44, 44); font-size: 20px;" class="fa fa-home"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">Overview <span style="margin-left: 65px; color: #000;">(1)</span> </span></a>
+                  <a class="nav-link text-truncate" href="#design"><i style="color: #3DDC84; font-size: 20px;" class="fa fa-android"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">D/ Dynaminer avec Javascript </span></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-truncate" href="#"><i style="color: rgb(195, 44, 44); font-size: 20px;" class="fa fa-home"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">Overview <span style="margin-left: 65px; color: #000;">(1)</span> </span></a>
+                  <a class="nav-link text-truncate" href="#design"><i style="color: #3DDC84; font-size: 20px;" class="fa fa-android"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">E/ Choisir entre Python/Django, Java/Springboot, et PHP/Laravel  </span></a>
               </li>
-              <li class="nav-item">
-                  <a class="nav-link text-truncate" href="#"><i style="color: rgb(195, 44, 44); font-size: 20px;" class="fa fa-home"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">Overview <span style="margin-left: 65px; color: #000;">(1)</span> </span></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-truncate" href="#"><i style="color: rgb(195, 44, 44); font-size: 20px;" class="fa fa-home"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">Overview <span style="margin-left: 65px; color: #000;">(1)</span> </span></a>
-              </li>
-              
               <!-- <li class="nav-item">
-                  <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" data-target="#submenu1"><i class="fa fa-table"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">Reports</span></a>
-                  <div class="collapse" style="width: black;" id="submenu1" aria-expanded="false">
-                      <ul style="color: black;" class="flex-column pl-2 nav">
-                          <li class="nav-item"><a class="nav-link py-0" href="#"><span>Orders</span></a></li>
-                          <li class="nav-item">
-                              <a class="nav-link  text-truncate collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1"><span>Customers</span></a>
-                              <div class="collapse" id="submenu1sub1" aria-expanded="false">
-                                  <ul class="flex-column nav pl-4">
-                                      <li class="nav-item">
-                                          <a class="nav-link p-1 text-truncate" href="#">
-                                              <i class="fa fa-fw fa-clock-o"></i> Daily </a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link p-1 text-truncate" href="#">
-                                              <i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link p-1 text-truncate" href="#">
-                                              <i class="fa fa-fw fa-bar-chart"></i> Charts </a>
-                                      </li>
-                                      <li class="nav-item">
-                                          <a class="nav-link p-1 text-truncate" href="#">
-                                              <i class="fa fa-fw fa-compass"></i> Areas </a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </li>
-                      </ul>
-                  </div>
+                  <a class="nav-link text-truncate" href="#stockage"><i style="color: #3DDC84; font-size: 20px;" class="fa fa-android"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">F/ Le deep leaning et ses particularités </span></a>
               </li>
-              <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-bar-chart"></i> <span class="d-none d-sm-inline">Analytics</span></a></li>
-              <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span class="d-none d-sm-inline">Export</span></a></li> -->
+              <li class="nav-item">
+                  <a class="nav-link text-truncate" href="#threading"><i style="color: #3DDC84; font-size: 20px;" class="fa fa-android"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">G/ Deep learning en pratique </span></a>
+              </li> -->
+              <!-- <li class="nav-item">
+                  <a class="nav-link text-truncate" href="#networking"><i style="color: #3DDC84; font-size: 20px;" class="fa fa-android"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">G/ Le networking ou le reseau sur Android </span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-truncate" href="#mydebug"><i style="color: #3DDC84; font-size: 20px;" class="fa fa-android"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">H/ Debbuging</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-truncate" href="#security"><i style="color: #3DDC84; font-size: 20px;" class="fa fa-android"></i> <span class="d-none d-sm-inline" style="color: black; margin-left: 10px; font-size: 19px;">I/ La sécurité avant le deployement </span></a>
+              </li> -->
+              
           </ul>
 
 
             <div class="mb-5" style="margin-top: 50px;">
               <h5>Tag Web</h5>
               <div class="tagcloud">
-                <a href="#" style="background-color: #16CE; color: #ffffff; border: 1px solid #000;" class="tag-cloud-link">dish</a>
-                <a href="#" class="tag-cloud-link">menu</a>
-                <a href="#" class="tag-cloud-link">food</a>
-                <a href="#" class="tag-cloud-link">sweet</a>
-                <a href="#" class="tag-cloud-link">tasty</a>
-                <a href="#" class="tag-cloud-link">delicious</a>
-                <a href="#" class="tag-cloud-link">desserts</a>
-                <a href="#" class="tag-cloud-link">drinks</a>
+                <a href="#" style="background-color: #16CE; color: #ffffff; border: 1px solid #000;" class="tag-cloud-link">HTML5</a>
+                <a href="#" class="tag-cloud-link">CSS3</a>
+                <a href="#" class="tag-cloud-link">Javascript</a>
+                <a href="#" class="tag-cloud-link">Jquery</a>
+                <a href="#" class="tag-cloud-link">Django</a>
+                <a href="#" class="tag-cloud-link">Laravel</a>
+                <a href="#" class="tag-cloud-link">Springboot</a>
+                <!-- <a href="#" class="tag-cloud-link"></a> -->
               </div>
             </div>
             <div class="mb-5">

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'acceuil.apps.AcceuilConfig',
     'django_extensions',
     'django_bootstrap_icons',
+    'sorl.thumbnail',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,16 @@ WSGI_APPLICATION = 'gestsoftware.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 load_dotenv(find_dotenv())
-DATABASES = { 'default': dj_database_url.config(default='sqlite:///db.sqlite3', conn_max_age=600, ssl_require=False)}
+DATABASES = { 
+      'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres', 
+        'USER': 'postgres', 
+        'PASSWORD': 'trust',
+        'HOST': 'localhost', 
+        'PORT': '5432',
+      }
+}
 
 
 # Password validation
@@ -130,3 +140,12 @@ STATICFILES_DIRS = (
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#email settings
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = '1025'
+#EMAIL_HOST_USER = ''
+#EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+#EMAIL_USE_SSL = False

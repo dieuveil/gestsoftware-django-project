@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>GestSoftware</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<head>
+  <title>GestSoftware</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
 
   {% load bootstrap_icons %}
   {% load static %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" type='text/css' href="{% static 'styles/mainstyle.css' %}">
-  <link rel="stylesheet" type='text/css' href="{% static 'styles/first.css' %}"> 
-     
+  <link rel="stylesheet" type='text/css' href="{% static 'styles/first.css' %}">
+
   <link rel="stylesheet" href="{% static 'styles/flaticon.css' %}">
   <link rel="stylesheet" href="{% static 'styles/icomoon.css' %}">
   <link rel="stylesheet" href="{% static 'styles/jquery-timepicker.css' %}">
@@ -46,8 +47,8 @@
   {% load static %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" type='text/css' href="{% static 'styles/mainstyle.css' %}">
-  <link rel="stylesheet" type='text/css' href="{% static 'styles/first.css' %}"> 
-     
+  <link rel="stylesheet" type='text/css' href="{% static 'styles/first.css' %}">
+
   <link rel="stylesheet" href="{% static 'styles/flaticon.css' %}">
   <link rel="stylesheet" href="{% static 'styles/icomoon.css' %}">
   <link rel="stylesheet" href="{% static 'styles/jquery-timepicker.css' %}">
@@ -61,116 +62,265 @@
 
   <style type="text/css">
     #mysecond {
-        display: none;
-        /*to hide popup initially*/
+      display: none;
+      /*to hide popup initially*/
     }
-   
-   </style>
-  </head>
-  <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="height: 60px;">
-      <div class="container">
-        <img style="height: 62px; width: 90px; margin-top: -4px;" src="{% static 'img/mylogo3.svg' %}"/> 
-        <br><small style="color: #000;"></small>
-        <button style="margin-top: -20px;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-          aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
-  
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="/" class="nav-link">Acceuil</a></li>
-            <li class="nav-item"><a href="/about" class="nav-link">À Propos</a></li>
-            <!-- <li class="nav-item"><a href="#ourservice" class="nav-link">Services</a></li> -->
-            <li style="margin-top: 15px;" class="dropdown">
-              <a class="dropdown-toggle" style="font-size: 16px; color: #55688b; font-weight: 400; opacity: 1 !important; padding-left: 20px; padding-right: 20px; padding-bottom: 0.9rem; padding-top: 12rem;" data-toggle="dropdown" href="#">Services
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"
+    style="height: 60px;">
+    <div class="container">
+      <img style="height: 62px; width: 90px; margin-top: -4px;" src="{% static 'img/mylogo3.svg' %}" />
+      <br><small style="color: #000;"></small>
+      <button style="margin-top: -20px;" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="/" class="nav-link">Acceuil</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link">À Propos</a></li>
+          <!-- <li class="nav-item"><a href="#ourservice" class="nav-link">Services</a></li> -->
+          <li style="margin-top: 15px;" class="dropdown">
+            <a class="dropdown-toggle"
+              style="font-size: 16px; color: #55688b; font-weight: 400; opacity: 1 !important; padding-left: 20px; padding-right: 20px; padding-bottom: 0.9rem; padding-top: 12rem;"
+              data-toggle="dropdown" href="#">Services
               <span class="caret"></span></a>
-              <ul class="dropdown-menu" style="margin-top: -15px; padding-left: 20px;">
-                <li><a href="/formation">Formations</a></li>
-                <li class="active"><a href="/incubateur">Incubateur</a></li>
-                <li><a href="/startup">Start-up</a></li>
+              <ul class="dropdown-menu" style="margin-top: -15px; padding-left: 20px; padding-right: 20px; width: 200px;">
+                <li style="margin-left: 20px; list-style-type: circle; padding-bottom: 10px;"><a href="/formation"> Formations Digital & Management </a></li>
+                <li style="margin-left: 20px; list-style-type: circle; padding-bottom: 10px;"><a href="/incubateur">Communication créative</a></li>
+                <li style="margin-left: 20px; list-style-type: circle; padding-bottom: 10px;"><a href="/startup">Développement des applications informatiques</a></li>
               </ul>
+          </li>
+
+
+          <!-- <li class="nav-item"><a href="#ourteam" class="nav-link">Equipe</a></li> -->
+          <li class="nav-item active"><a href="/formation" class="nav-link">Formations</a></li>
+          <!-- <li class="nav-item"><a href="event.html" class="nav-link">Partenaires</a></li> -->
+          <!-- <li class="nav-item"><a href="#ourcontact" class="nav-link">Contact</a></li> -->
+          <!-- <li class="nav-item cta"><a id="register" style="height: 38px; text-align: center; margin-top: 10px; padding-top: 5px;" class="nav-link"><span>Applquer !</span></a></li> -->
+          <li class="nav-item cta"><button type="button" class="btn btn-primary" style="margin-top: 10px;">Appliquez
+              !</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <div class="hero-wrap hero-wrap-2"
+    style="background-image: url('{%static 'img/formation-center2.jpg'%}'); background-attachment:fixed; height: 390px;">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-8  text-center">
+          <p class="breadcrumbs" style="font-size: 20px;"><span class="mr-2"><a href="/">Acceuil</a></span>
+            <span>Formation</span>
+          </p>
+          <h1 class="mb-3 bread">Formations</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="ftco-section">
+    <div class="container-flex" style="padding-left: 90px; padding-right: 90px;">
+      <div class="row d-flex" style="text-align: justify; color: #000; font-weight: 400;">
+        <div class="col-md-6 pl-md-5 ">
+          <br />
+          <h3><strong>Formations digitale & Management</strong></h3><br />
+          <p style="text-align: justify;">
+            Avec une équipe de formateurs internationale ( france, maroc …) et locale Gestsofwtare propose un catalogue
+            de formations qualifiantes et diplômantes reconnues à l’internationale ( organismes français) dans le
+            numérique et le management de projets digitaux.
+          <ul style="text-align: justify;">
+            <li>Les institutions publiques ou privées engagées dans la réinsertion professionnelle par la formation;
             </li>
-  
-  
-            <!-- <li class="nav-item"><a href="#ourteam" class="nav-link">Equipe</a></li> -->
-            <li class="nav-item active"><a href="/formation" class="nav-link">Formations</a></li>
-            <!-- <li class="nav-item"><a href="event.html" class="nav-link">Partenaires</a></li> -->
-            <!-- <li class="nav-item"><a href="#ourcontact" class="nav-link">Contact</a></li> -->
-            <!-- <li class="nav-item cta"><a id="register" style="height: 38px; text-align: center; margin-top: 10px; padding-top: 5px;" class="nav-link"><span>Applquer !</span></a></li> -->
-            <li class="nav-item cta"><button type="button" class="btn btn-primary" style="margin-top: 10px;">Appliquez !</button></li>
+            <li>Les entreprises souhaitant développer l’expertise de leurs collaborateurs;</li>
+            <li>Les demandeurs d’emploi ou des personnes en reconversion professionnelle;</li>
+            <li>Les personnes désireuses d’apprendre les métiers du numérique.</li>
           </ul>
+          <ul style="text-align: justify;">
+            <strong style="text-align: center;">Modalités de formation</strong>
+
+            <li>Formation en présentiel;</li>
+            <li>Formation à distance à travers une plateforme e-learning dédiée et propriétaire;</li>
+            <li>Formation sur mesure (dédiée aux entreprises et aux individus )</li>
+          </ul><br/>
+          <h6 style="text-align: center; text-decoration: underline;"><strong>Types de formation en fonction de la durée</strong></h6>
+          <p>
+            <strong>Formations diplômantes</strong> <br />
+            <strong>Duée:</strong>6 mois <br />
+            <strong>Validation de la formation :</strong> Stage en entreprise ou développement d’un projet
+            professionnel)
+          </p>
+          <p>
+            <strong>Formations certifiantes</strong> <br />
+            <strong>Duée:</strong>6 mois <br />
+            <strong>Validation de la formation :</strong> Examens theorique et pratique
+            professionnel)
+          </p>
+
+          <h6 style="text-align: center; text-decoration: underline;"><strong>Débouchés</strong></h6>
+          <ul style="color: #000;">
+            <li>Freelance</li>
+            <li>Salarié en entreprise</li>
+            <li>Entrepreneur dans le numérique</li>
+           <li>Chef de projet</li>
+           </ul>
+
+
+          </p>
+
+        </div>
+
+        <div class="col-md-6 d-flex" style="padding-left: 20px;">
+          <!-- <div class="img img-about align-self-stretch" style="background-image: url(images/bg_3.jpg); width: 100%;"> -->
+          <div class="img img-about align-self-stretch"
+            style="background-image: url('{%static 'img/startup.jpg'%}'); width: 100%;">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- <section class="ftco-section">
+    <div class="container">
+      <div class="row d-flex">
+
+        <div class="col-md-3 d-flex ">
+         
+        </div>
+
+        <div class="col-md-9 pl-md-5 ">
+          <h2 class="mb-4" style="text-align: center; color: #000;">En plus des compétences que vous allez acquérir, quels autres
+            avantages obtiendrez vous </h2>
+          <p style="text-align: justify;">
+          <p>
+            <strong>Formations diplômantes</strong> <br />
+            <strong>Duée:</strong>6 mois <br />
+            <strong>Validation de la formation :</strong> Stage en entreprise ou développement d’un projet
+            professionnel)
+          </p>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          </p>
         </div>
       </div>
-    </nav>
-    <!-- END nav -->
+    </div>
+  </section> -->
+
+  <div id="content">
     
-    <div class="hero-wrap hero-wrap-2" style="background-image: url('{%static 'img/formation-center2.jpg'%}'); background-attachment:fixed; height: 390px;">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-8  text-center">
-            <p class="breadcrumbs" style="font-size: 20px;"><span class="mr-2"><a href="/">Acceuil</a></span> <span>Formation</span></p>
-            <h1 class="mb-3 bread">Formations</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
     <div id="content">
-      <div style="padding-top: 40px; padding-left: 110px; padding-right: 110px;">
-        <h3><strong>Introduction</strong></h3><br/>
-        <p style="text-align: justify;">
-          Cette page contient toutes les formations que <strong>GestSoftware</strong> met a votre disposition.
-          Pour avoir plus d'informations concernant une formation donnée, veuillez clicker sur le boutton <strong>Plus d'infos</strong>
-          afin de voir toutes les informations dont vous avez besoins. Tel que "l'interet de faire cette formation" qui est une information capitale pour vous.
-          Sachez que <strong>GestSoftware</strong> propose des formations certifiantes et diplomantes. Vous devriez egalement considerer la date du debut et de la fin de chaque formation.<br/>
+      <div style="padding-top: 40px; padding-left: 110px; padding-right: 110px; color: #000; margin-top: -40px;">
+        <br />
+        <h3 style="text-align: center;"><strong>Liste Des Formations Actuelles</strong></h3><br />
+      </div>
 
-          
+      <section class="ftco-section" id="myfirst" style="margin-top: -60px;">
 
-        </p>
-    </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/myai.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>L'intelligence Artificielle</span></p>
+                  <h3 class="mb-3"><a href="#">Devenez Data scientist</a></h3>
+                  <p style="text-align: justify;">A traver cette formation vous allez apprendre a implementer les models
+                    machine learning et deep learning.
+                  </p>
+                  <p><a href="/datascience" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
 
-    <section class="ftco-section" id="myfirst" style="margin-top: -20px;">
-
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/artifice.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>L'intelligence Artificielle</span></p>
-                <h3 class="mb-3"><a href="#">Devenez Data scientist</a></h3>
-                <p style="text-align: justify;">A traver cette formation vous allez apprendre a implementer les models machine learning et deep learning.
-                </p>
-                <p><a href="#" class="btn btn-primary">Plus d'infos !</a></p>
-              </div>
-
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
               </div>
             </div>
-          </div>
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/web.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>Web</span></p>
-                <h3 class="mb-3"><a href="#">Devenez développeur Web</a></h3>
-                <p style="text-align: justify;">Cette formation vous permettra d'acquerir une maitrise parfaite du HTML5, de CSS3, de Javascripts et de PHP. </p>
-                <p><a href="/web-developer" class="btn btn-primary">Plus d'infos !</a></p>
-              </div>
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/web.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>Web</span></p>
+                  <h3 class="mb-3"><a href="#">Devenez développeur Web</a></h3>
+                  <p style="text-align: justify;">Cette formation vous permettra d'acquerir une maitrise parfaite du
+                    HTML5, de CSS3, de Javascripts et de PHP. </p>
+                  <p><a href="/web-developer" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
 
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
               </div>
             </div>
-          </div>
-    			<div class="col-md-4 d-flex">
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/business.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>Business Intelligence</span></p>
+                  <h3 class="mb-3"><a href="#">Apprenez l'informatique decisionel</a></h3>
+                  <p style="text-align: justify;">Comment transformer les données en Information afin d'en tirer profit
+                    ?
+                  </p>
+                  <p><a href="/business" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
+
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-4 d-flex">
             <div class="course align-self-stretch">
               <a href="#" class="img" style="background-image: url('{%static 'img/cyber.jpg'%}')"></a>
               <div class="text p-4">
@@ -186,201 +336,239 @@
                 <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
               </div>
             </div>
-          </div>
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/android.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>Android</span></p>
-                <h3 class="mb-3"><a href="#">Développeur d'application Android</a></h3>
-                <p style="text-align: justify;">Cette formation est parfaite pour vous si vous voullez apprendre a implementer des Applications Android.
-                </p>
-                <p><a href="/mobile-developer" class="btn btn-primary">Plus d'infos !</a></p>
-              </div>
+          </div> -->
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/android.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>Android</span></p>
+                  <h3 class="mb-3"><a href="#">Développeur d'application Android</a></h3>
+                  <p style="text-align: justify;">Cette formation est parfaite pour vous si vous voullez apprendre a
+                    implementer des Applications Android.
+                  </p>
+                  <p><a href="/mobile-developer" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
 
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/bigdata.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>Big Data</span></p>
+                  <h3 class="mb-3"><a href="#">Devenez expert en Big data</a></h3>
+                  <p style="text-align: justify;">Durant cette formation vous allez apprendre a utilisé les data lake
+                    tel que Hadoop ainsi que les datawarehouse comme Microsoft SQL.
+                  </p>
+                  <p><a href="/bigdata" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
+
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/mypython.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>Python 3.2</span></p>
+                  <h3 class="mb-3"><a href="#">Apprenez a developper en python</a></h3>
+                  <p style="text-align: justify;">Ce language de programmation vous permettra de devenir soit
+                    developpeur web avec django ou data scientist étant incontournable en IA.
+                  </p>
+                  <p><a href="/pythondeveloper" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
+
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
               </div>
             </div>
           </div>
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/bigdata.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>Big Data</span></p>
-                <h3 class="mb-3"><a href="#">Devenez expert en Big data</a></h3>
-                <p style="text-align: justify;">Durant cette formation vous allez apprendre a utilisé les data lake tel que Hadoop ainsi que les datawarehouse comme Microsoft SQL.
-                </p>
-                <p><a href="/bigdata" class="btn btn-primary">Plus d'infos !</a></p>
-              </div>
 
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
-              </div>
-            </div>
-          </div>
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/mypython.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>Python 3.2</span></p>
-                <h3 class="mb-3"><a href="#">Apprenez a developper en python</a></h3>
-                <p style="text-align: justify;">Ce language de programmation vous permettra de devenir soit developpeur web avec django ou data scientist étant incontournable en IA.
-                </p>
-                <p><a href="#" class="btn btn-primary">Plus d'infos !</a></p>
-              </div>
-
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
-              </div>
-            </div>
-          </div>
-    		</div>
-
-    		<div class="row mt-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><span href="#">&lt;</span></li>
-                <li class="active"><span id="un">1</span></li>
-                <li><span id="deux">2</span></li>
+          <div class="row mt-5">
+            <div class="col text-center">
+              <div class="block-27">
+                <ul>
+                  <li><span href="#">&lt;</span></li>
+                  <li class="active"><span id="un">1</span></li>
+                  <!--<li><span id="deux">2</span></li>
                 <li><span id="trois">3</span></li>
-                <!-- <li><span href="#">4</span></li>
+                 <li><span href="#">4</span></li>
                 <li><a href="#">5</a></li> -->
-                <li><a href="#">&gt;</a></li>
-              </ul>
+                  <li><a href="#">&gt;</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-    	</div>
-    </section>
+      </section>
 
-   <section class="ftco-section" id="mysecond" style="margin-top: -20px;">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/artifice.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>L'intelligence Artificielle</span></p>
-                <h3 class="mb-3"><a href="#">Devenez Data scientist</a></h3>
-                <p style="text-align: justify;">A traver cette formation vous allez apprendre a implementer les models machine learning et deep learning.
-                </p>
-                <p><a href="#" class="btn btn-primary">Plus d'infos !</a></p>
+      <section class="ftco-section" id="mysecond" style="margin-top: -20px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/artifice.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>L'intelligence Artificielle</span></p>
+                  <h3 class="mb-3"><a href="#">Devenez Data scientist</a></h3>
+                  <p style="text-align: justify;">A traver cette formation vous allez apprendre a implementer les models
+                    machine learning et deep learning.
+                  </p>
+                  <p><a href="#" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
               </div>
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/web.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>Web</span></p>
+                  <h3 class="mb-3"><a href="#">Devenez développeur Web</a></h3>
+                  <p style="text-align: justify;">Cette formation vous permettra d'acquerir une maitrise parfaite du
+                    HTML5, de CSS3, de Javascripts et de PHP. </p>
+                  <p><a href="/web-developer" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
+
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/cyber.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>Cybersecurité "Pentest"</span></p>
+                  <h3 class="mb-3"><a href="#">Devenez expert en Cybersecurité</a></h3>
+                  <p style="text-align: justify;">Cette formation vous permettra d'apprendre a explorer les
+                    vulnerabilités du systeme informatique d'une entreprise données.
+                  </p>
+                  <p><a href="#" class="btn btn-primary">Plus d'infos!</a></p>
+                </div>
+
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/android.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>Android</span></p>
+                  <h3 class="mb-3"><a href="#">Développeur d'application Android</a></h3>
+                  <p style="text-align: justify;">Cette formation est parfaite pour vous si vous voullez apprendre a
+                    implementer des Applications Android.
+                  </p>
+                  <p><a href="/mobile-developer" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
+
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/bigdata.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>Big Data</span></p>
+                  <h3 class="mb-3"><a href="#">Devenez expert en Big data</a></h3>
+                  <p style="text-align: justify;">Durant cette formation vous allez apprendre a utilisé les data lake
+                    tel que Hadoop ainsi que les datawarehouse comme Microsoft SQL.
+                  </p>
+                  <p><a href="#" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
+
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="course align-self-stretch">
+                <a href="#" class="img" style="background-image: url('{%static 'img/mypython.jpg'%}')"></a>
+                <div class="text p-4">
+                  <p class="category"><span>Python 3.2</span></p>
+                  <h3 class="mb-3"><a href="#">Apprenez a developper en python</a></h3>
+                  <p style="text-align: justify;">Ce language de programmation vous permettra de devenir soit
+                    developpeur web avec django ou data scientist étant incontournable en IA.
+                  </p>
+                  <p><a href="#" class="btn btn-primary">Plus d'infos !</a></p>
+                </div>
+
+                <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
+                  <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"
+                      class="lni-user"></i><a href="#">Début de la Session</a></span>
+                  <span class="date float-right"><i class="lni-calendar"
+                      style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En
+                      cours</a></span>
+                </div>
               </div>
             </div>
           </div>
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/web.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>Web</span></p>
-                <h3 class="mb-3"><a href="#">Devenez développeur Web</a></h3>
-                <p style="text-align: justify;">Cette formation vous permettra d'acquerir une maitrise parfaite du HTML5, de CSS3, de Javascripts et de PHP. </p>
-                <p><a href="/web-developer" class="btn btn-primary">Plus d'infos !</a></p>
-              </div>
-
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
-              </div>
-            </div>
-          </div>
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/cyber.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>Cybersecurité "Pentest"</span></p>
-                <h3 class="mb-3"><a href="#">Devenez expert en Cybersecurité</a></h3>
-                <p style="text-align: justify;">Cette formation vous permettra d'apprendre a explorer les vulnerabilités du systeme informatique d'une entreprise données.
-                </p>
-                <p><a href="#" class="btn btn-primary">Plus d'infos!</a></p>
-              </div>
-
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
-              </div>
-            </div>
-          </div>
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/android.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>Android</span></p>
-                <h3 class="mb-3"><a href="#">Développeur d'application Android</a></h3>
-                <p style="text-align: justify;">Cette formation est parfaite pour vous si vous voullez apprendre a implementer des Applications Android.
-                </p>
-                <p><a href="/mobile-developer" class="btn btn-primary">Plus d'infos !</a></p>
-              </div>
-
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
-              </div>
-            </div>
-          </div>
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/bigdata.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>Big Data</span></p>
-                <h3 class="mb-3"><a href="#">Devenez expert en Big data</a></h3>
-                <p style="text-align: justify;">Durant cette formation vous allez apprendre a utilisé les data lake tel que Hadoop ainsi que les datawarehouse comme Microsoft SQL.
-                </p>
-                <p><a href="#" class="btn btn-primary">Plus d'infos !</a></p>
-              </div>
-
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
-              </div>
-            </div>
-          </div>
-    			<div class="col-md-4 d-flex">
-            <div class="course align-self-stretch">
-              <a href="#" class="img" style="background-image: url('{%static 'img/mypython.jpg'%}')"></a>
-              <div class="text p-4">
-                <p class="category"><span>Python 3.2</span></p>
-                <h3 class="mb-3"><a href="#">Apprenez a developper en python</a></h3>
-                <p style="text-align: justify;">Ce language de programmation vous permettra de devenir soit developpeur web avec django ou data scientist étant incontournable en IA.
-                </p>
-                <p><a href="#" class="btn btn-primary">Plus d'infos !</a></p>
-              </div>
-
-              <div class="author" style="border-top: 1px solid #ddd; padding: 18px 30px 35px 30px;">
-                <span class="name"><i style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;" class="lni-user"></i><a href="#">Début de la Session</a></span>
-                <span class="date float-right"><i class="lni-calendar" style="color: #3ecf8e; font-size: 10px; position: absolute; top: 3px;"></i><a href="#">En cours</a></span>
-              </div>
-            </div>
-          </div>
-    		</div>
-    		<div class="row mt-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><span href="#">&lt;</span></li>
-                <li><span id="une">1</span></li>
-                <li class="active"><span id="deux">2</span></li>
+          <div class="row mt-5">
+            <div class="col text-center">
+              <div class="block-27">
+                <ul>
+                  <li><span href="#">&lt;</span></li>
+                  <li><span id="une">1</span></li>
+                  <!-- <li class="active"><span id="deux">2</span></li>
                 <li><span id="trois3">3</span></li>
-                <!-- <li><span href="#">4</span></li>
+                <li><span href="#">4</span></li>
                 <li><a href="#">5</a></li>  -->
-                <li><a href="#">&gt;</a></li>
-              </ul>
+                  <li><a href="#">&gt;</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-    	</div>
+      </section>
     </section> 
-		
-		<!-- <section class="ftco-section-parallax">
+      </section>
+
+      <!-- <section class="ftco-section-parallax">
       <div class="parallax-img d-flex align-items-center">
         <div class="container">
           <div class="row d-flex justify-content-center">
@@ -404,79 +592,74 @@
     </section> -->
 
 
-  <!-- loader -->
-  <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> -->
-
-  
-  <!-- loader -->
+      <!-- loader -->
+      <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> -->
 
 
-  <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-  <script src="{% static 'js/jquery.min.js' %}"></script>
-  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
-  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
-  <script src="{% static 'js/popper.min.js' %}"></script>
-  <script src="{% static 'js/bootstrap.min.js' %}"></script>
-  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
-  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
-  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-  <script src="{% static 'js/aos.js' %}"></script>
-  <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
-  <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
-  <script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
-  <script src="{% static 'js/scrollax.min.js' %}"></script>
-  <script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false' %}"></script>
-  <script src="{% static 'js/google-map.js' %}"></script>
-  <script src="{% static 'js/main.js' %}"></script>
+      <!-- loader -->
 
 
-  <script>
-    $(document).ready(function () {
-
-      $('.carousel').carousel({
-          interval: 2000
-      })
-
-      $("#showing").click(function (event) {
-        $("#mycontent").toggle();
-      });
-
-      $("#myclose").click(function (event) {
-        $("#mycontent").toggle();
-      });
-      
-      $("#trois").click(function (event) {
-        alert("D'autres Formations sont en cours de preparation")
-      });
-
-      $("#trois3").click(function (event) {
-        alert("D'autres Formations sont en cours de preparation")
-      });
-
-      $("#une").click(function (event) {
-         $("#mysecond").fadeOut(1000);
-         $("#myfirst").fadeIn(1000);
-        //  $("#mysecond").hide(2000);
-        //  $("#myfirst").show(2000);
-      });
-
-      $("#deux").click(function (event) {
-        $("#myfirst").fadeOut(1000);
-        $("#mysecond").fadeIn(1000);
-        // $("#myfirst").hide(2000);
-        // $("#mysecond").show(2000);
-      });
+      <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+      <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+      <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+      <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+      <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+      <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+      <script src="{% static 'js/aos.js' %}"></script>
+      <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+      <script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
+      <script src="{% static 'js/scrollax.min.js' %}"></script>
+      <script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false' %}"></script>
+      <script src="{% static 'js/google-map.js' %}"></script>
+      <script src="{% static 'js/main.js' %}"></script>
 
 
+      <script>
+        $(document).ready(function () {
 
+          $('.carousel').carousel({
+            interval: 2000
+          })
 
+          $("#showing").click(function (event) {
+            $("#mycontent").toggle();
+          });
 
+          $("#myclose").click(function (event) {
+            $("#mycontent").toggle();
+          });
 
+          $("#trois").click(function (event) {
+            alert("D'autres Formations sont en cours de preparation")
+          });
 
-    });
-  </script>
-    
-  </body>
+          $("#trois3").click(function (event) {
+            alert("D'autres Formations sont en cours de preparation")
+          });
+
+          $("#une").click(function (event) {
+            $("#mysecond").fadeOut(1000);
+            $("#myfirst").fadeIn(1000);
+            //  $("#mysecond").hide(2000);
+            //  $("#myfirst").show(2000);
+          });
+
+          $("#deux").click(function (event) {
+            $("#myfirst").fadeOut(1000);
+            $("#mysecond").fadeIn(1000);
+            // $("#myfirst").hide(2000);
+            // $("#mysecond").show(2000);
+          });
+
+        });
+      </script>
+
+</body>
+
 </html>

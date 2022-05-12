@@ -56,10 +56,10 @@
             <li style="margin-top: 15px;" class="dropdown">
               <a class="dropdown-toggle" style="font-size: 16px; color: #55688b; font-weight: 400; opacity: 1 !important; padding-left: 20px; padding-right: 20px; padding-bottom: 0.9rem; padding-top: 12rem;" data-toggle="dropdown" href="#">Services
               <span class="caret"></span></a>
-              <ul class="dropdown-menu" style="margin-top: -15px; padding-left: 20px;">
-                <li><a href="/formation">Formation</a></li>
-                <li><a href="/incubateur">Incubateur</a></li>
-                <li><a href="/startup">Start-up</a></li>
+              <ul class="dropdown-menu" style="margin-top: -15px; padding-left: 20px; padding-right: 20px; width: 200px;">
+                <li style="margin-left: 20px; list-style-type: circle; padding-bottom: 10px;"><a href="/formation"> Formations Digital & Management </a></li>
+                <li style="margin-left: 20px; list-style-type: circle; padding-bottom: 10px;"><a href="/incubateur">Communication créative</a></li>
+                <li style="margin-left: 20px; list-style-type: circle; padding-bottom: 10px;"><a href="/startup">Développement des applications informatiques</a></li>
               </ul>
             </li>
   
@@ -94,7 +94,7 @@
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-8  text-center">
             <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Acceuil</a></span> <span>Formation</span></p>
-            <h1 class="mb-3 bread">Formations</h1>
+            <h1 class="mb-3 bread">Présentation</h1>
           </div>
         </div>
       </div>
@@ -103,21 +103,29 @@
     <section class="ftco-section">
     	<div class="container">
     		<div class="row d-flex">
-    			<div class="col-md-6 d-flex ">
+    			<div class="col-md-4 d-flex" style="padding-left: 10px; padding-top: 90px;">
     				<!-- <div class="img img-about align-self-stretch" style="background-image: url(images/bg_3.jpg); width: 100%;"> -->
-              <div class="img img-about align-self-stretch" style="background-image: url('{%static 'img/bg_3.jpg'%}'); width: 100%;">
-              </div>
+              <!-- <div class="img img-about align-self-stretch" style="background-image: url('{%static 'img/mylogo3.svg'%}'); width: 100%;">  -->
+                <div style="text-align: center;">
+                  <img src="{% static 'img/mylogo3.svg' %}" style="width: 400px; height: 400px; text-align: center;" />
+                </div> 
     			</div>
-    			<div class="col-md-6 pl-md-5 ">
-    				<h2 class="mb-4">GestSoftware</h2>
-    				<p>GestSoftware est une Entreprise informatique cree en 2013 par l'informaticien et entrepreneur --- </p>
-    				<p>Les principaux services de l'Entreprise GestSoftware sont: 
-              <ul>
-                <li>La formation,</li> 
-                <li>Le developpement des Applications Web et Mobile,</li> 
-                <li>GestSoftware dispose egalemant d'un incubateur.</li> 
-              </ul><br/>
-            
+    			<div class="col-md-8 pl-md-5" style="padding-left: 30px;">
+    				<h2 class="mb-4" style="text-decoration: underline; text-align: center;">Présentation</h2>
+    				<p style="text-align: justify; color: #000;">
+              Gestsoftware est une entreprise de droit congolais spécialisée dans :<br/>
+                  <ul style="text-align: justify; color: #000;">
+                   <li>les technologies de l’information ( numérique);</li> 
+                   <li>les technologies  créatives ( communication, multimédia);</li> 
+                   <li>et l'ingénierie de la formation professionnelle et qualifiante.</li>
+                </ul>
+              <p style="text-align:justify; color: #000;">Getsoftware à pour ambition d’accompagner  l’Homme au cœur de l’entreprise dans un monde où les technologies de l’information et créatives deviennent indispensables,  sur la base des compétences acquises et mobilisables . 
+              Gestsofware a pour vocation :</p>
+                  <ul style="text-align: justify; color: #000;">
+                   <li>De faire bénéficier à ses partenaires au congo et en Afrique  une expertise  de plusieurs années à l’etranger (en europe, au maroc) dans le développement d’applications informatiques, la conduite des projets, les systèmes et réseaux télécoms, l'intelligence artificielle et la big data.</li>
+                   <li>D'aider à la prise en main et la maîtrise de la communication numérique, facteur déterminant dans le succès personnel entrepreneurial et institutionnel.</li>
+                   <li>D’accompagner des personnes en recherche d’emploi , de qualification ou  en reconversion à acquérir  ou développer des compétences utiles à la matérialisation et la réussite de  leurs projets dans le numérique par la formation,le conseil et l’accompagnement.</li> 
+                </ul>
             </p>
     			</div>
     		</div>
