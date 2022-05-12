@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from email.policy import default
+import imp
 import dj_database_url
 from dotenv import load_dotenv, find_dotenv
 
@@ -90,6 +91,10 @@ DATABASES = {
         'PORT': '5432',
       }
 }
+
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
