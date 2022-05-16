@@ -5,35 +5,16 @@ from django.core.mail import send_mail
 from django.http import HttpResponse
 
 from .models import Students
-
-# Create your views here.
-
-  
-# create a function
-#def index(request):
-    
-    # return response with template and context
-    #return render(request, "index.html", context)
+from .forms import Studentsform
 
 def index(request):
-    all_students = Students.objects.all
     if request.method == "POST":
-       message_name = request.POST['message-name']
-       message_email = request.POST['message-email']
-       message_subject = request.POST['message-subject']
-       message = request.POST['message']
-       receiver = 'dieuveilmabirou@gmail.com'
-
-       send_mail(
-         message_subject,
-         message,
-         message_email,
-         [receiver],
-       )
-
-       return render(request, 'index.html', {'message_name': message_name})
+       form = Studentsform(request.POST or None)
+       if form.is_valid():
+           form.save()
+           return render(request, 'index.html', {})
     else:
-       return render(request, 'index.html', {'all': all_students})
+       return render(request, 'index.html', {})
 
 
 
