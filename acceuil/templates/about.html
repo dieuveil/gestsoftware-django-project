@@ -36,6 +36,34 @@
     <link rel="stylesheet" href="{% static 'styles/css/animate.css' %}">
     <link rel="stylesheet" href="{% static 'styles/open-iconic-bootstrap.min.css' %}">
   
+    <style type="text/css">
+      #mycontent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 430px;
+        text-align: center;
+        background-color: #e8eae6;
+        box-sizing: border-box;
+        padding: 20px;
+        padding-top: 60px;
+        z-index: 100;
+        display: none;
+        /*to hide popup initially*/
+      }
+  
+      #myclose {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        /* background-color: black;
+          color: white; */
+        border-radius: 50%;
+        padding: 4px;
+      }
+    </style>
   </head>
   <body>
     
@@ -69,7 +97,8 @@
             <!-- <li class="nav-item"><a href="event.html" class="nav-link">Partenaires</a></li> -->
             <!-- <li class="nav-item"><a href="#ourcontact" class="nav-link">Contact</a></li> -->
             <!-- <li class="nav-item cta"><a id="register" style="height: 38px; text-align: center; margin-top: 10px; padding-top: 5px;" class="nav-link"><span>Applquer !</span></a></li> -->
-            <li class="nav-item cta"><button type="button" class="btn btn-primary" style="margin-top: 10px;">Appliquez !</button></li>
+            <li class="nav-item cta"><button type="button" id="showing" onclick="togglePopup()" class="btn btn-primary"
+              style="margin-top: 10px;">Allez en cours !</button></li>
           </ul>
         </div>
       </div>
@@ -115,14 +144,14 @@
     				<p style="text-align: justify; color: #000;">
               Gestsoftware est une entreprise de droit congolais spécialisée dans :<br/>
                   <ul style="text-align: justify; color: #000;">
-                   <li>les technologies de l’information ( numérique);</li> 
-                   <li>les technologies  créatives ( communication, multimédia);</li> 
+                   <li>les technologies de l’information (numérique);</li> 
+                   <li>les technologies  créatives (communication, multimédia);</li> 
                    <li>et l'ingénierie de la formation professionnelle et qualifiante.</li>
                 </ul>
-              <p style="text-align:justify; color: #000;">Getsoftware à pour ambition d’accompagner  l’Homme au cœur de l’entreprise dans un monde où les technologies de l’information et créatives deviennent indispensables,  sur la base des compétences acquises et mobilisables . 
+              <p style="text-align:justify; color: #000;">Getsoftware a pour ambition d’accompagner  l’Homme au cœur de l’entreprise dans un monde où les technologies de l’information et créatives deviennent indispensables,  sur la base des compétences acquises et mobilisables . 
               Gestsofware a pour vocation :</p>
                   <ul style="text-align: justify; color: #000;">
-                   <li>De faire bénéficier à ses partenaires au congo et en Afrique  une expertise  de plusieurs années à l’etranger (en europe, au maroc) dans le développement d’applications informatiques, la conduite des projets, les systèmes et réseaux télécoms, l'intelligence artificielle et la big data.</li>
+                   <li>De faire bénéficier à ses partenaires au congo et en Afrique  une expertise  de plusieurs années à l’etranger (en europe, au maroc) dans le développement d’applications informatiques, la conduite des projets, les systèmes et réseaux télécoms, la cybersécurité, l'intelligence artificielle et le big data.</li>
                    <li>D'aider à la prise en main et la maîtrise de la communication numérique, facteur déterminant dans le succès personnel entrepreneurial et institutionnel.</li>
                    <li>D’accompagner des personnes en recherche d’emploi , de qualification ou  en reconversion à acquérir  ou développer des compétences utiles à la matérialisation et la réussite de  leurs projets dans le numérique par la formation,le conseil et l’accompagnement.</li> 
                 </ul>
@@ -138,9 +167,44 @@
 
 
   
+
+  <div id="mycontent">
+    <div id="myclose">
+      <i class="fa fa-times" style="font-size: 25px; color: #000;" aria-hidden="true"></i>
+    </div>
+    <!-- Pills content -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+        <form>
+          <div class="text-center mb-3">
+            <p>LOGIN</p>
+          </div>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="text" style="border-radius: 10px; height: 40px;" class="form-control" id="name" name="name" placeholder="Votre Identifiant"  class="form-control" />
+            <!-- <label class="form-label" for="loginName">Email or username</label> -->
+          </div>
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input type="password" style="border-radius: 10px; height: 40px;" class="form-control" id="password" name="password" placeholder="Votre mot de passe" class="form-control" />
+            <!-- <label class="form-label" for="loginPassword">Password</label> -->
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" style="height: 50px;" class="btn btn-primary btn-block mb-4"><a href="formations/formation-ia"></a>Sign in</button>
+
+          <!-- Register buttons -->
+          <div class="text-center">
+            <p style="color: red;">Veuillez nous contactez pour les formations en ligne</p>
+            <!-- <p>Ecrivez nous pour l'inscription en ligne</p> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- loader -->
 
-
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
   <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
   <script src="{% static 'js/jquery.min.js' %}"></script>
   <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
@@ -157,9 +221,36 @@
   <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
   <script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
   <script src="{% static 'js/scrollax.min.js' %}"></script>
-  <script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false' %}"></script>
+  <script
+    src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false' %}"></script>
   <script src="{% static 'js/google-map.js' %}"></script>
   <script src="{% static 'js/main.js' %}"></script>
-    
+
+
+  <script>
+    $(document).ready(function () {
+
+      $('.carousel').carousel({
+        interval: 2000
+      })
+
+
+      $("#showing").click(function (event) {
+        $("#mycontent").toggle();
+      });
+
+      $("#showing2").click(function (event) {
+        $("#mycontent").toggle();
+      });
+
+      $("#myclose").click(function (event) {
+        $("#mycontent").toggle();
+      });
+
+
+    });
+  </script>
+  
+ 
   </body>
 </html>

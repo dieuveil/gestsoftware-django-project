@@ -20,4 +20,6 @@ from django.conf.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('acceuil.urls')),
+    path('formations/', include('formtions.urls')),
+    #path('/formation', include("django.contrib.auth.urls")),
 ]

@@ -1,5 +1,5 @@
 from email import message
-import imp
+
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.http import HttpResponse
@@ -18,8 +18,6 @@ def index(request):
 
 
 
-
-  
 # create a function
 def about(request):
     return render(request, "about.html")
@@ -55,5 +53,8 @@ def business(request):
 
 def pydeveloper(request):
     return render(request, "pythondeveloper.html")
+
+
+
 
 

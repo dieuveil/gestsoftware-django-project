@@ -9,7 +9,8 @@ from .views import startup
 from .views import webdeveloper
 from .views import mobiledeveloper
 from .views import pydeveloper
- 
+
+
 urlpatterns = [
     path('', index, name="contact"),
     path('about', about),
